@@ -1,0 +1,90 @@
+.chat-app {
+    display: flex;
+}
+.conversation {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conversation h2 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+.contacts-list {
+    flex: 2;
+    max-height: 600px;
+    overflow-y: auto;
+    border-left: 1px solid #ccc;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.contacts-list ul li {
+    padding: 3px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+}
+.contacts-list .avatar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.contacts-list .avatar img {
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.contacts-list .contact {
+    flex: 3;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts-list .contact p {
+    margin: 0;
+}
+.contacts-list .contact .name {
+    font-weight: bold;
+}
+#app .card-body {
+    padding: 0;
+}
+#app .card-body .composer {
+    width: 100%;
+}
+#app .card-body textarea {
+    resize: none;
+    padding-top: 9px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.contacts-list .selected {
+    
+    background-color: #dfdfdf;
+}
+.unread {
+    background: #e81717;
+    color: #fff;
+    position: absolute;
+    right: 11px;
+    top: 28px;
+    display: flex;
+    font-weight: 700;
+    min-width: 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 0 4px;
+    border-radius: 3px;
+}
